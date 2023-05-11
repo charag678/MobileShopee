@@ -61,7 +61,7 @@
 // export default Addtocart;
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { Container, Row, Col,Button } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 
 export default function Cart() {
 
@@ -88,14 +88,14 @@ export default function Cart() {
     return (
         <Container>
 
-            <Row>
+            
 
-                <Col>
-                    <Row>
+                
                         {
                             data ? data.map((d, index) => {
                                 if (d !== false) {
                                     return (
+                                        <Row>
                                         <Col className="border mt-5 mb-4">
 
                                             <div className="addtocartshow d-flex">
@@ -118,18 +118,19 @@ export default function Cart() {
                                                 </div>
                                             </div>
                                             </Col>
+                                             </Row>
                                 )}
                                 
                             }):null
                         }
 
-                                        </Row>
-                   </Col>
-                <Col>
+                                       
+                   
+                
 
-                </Col>
+                
 
-            </Row>
+            
 
         </Container>
     )

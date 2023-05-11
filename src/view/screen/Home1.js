@@ -18,7 +18,7 @@ function Home1() {
                         return (
                            <Carousel.Item>
                               <video
-                                 className="d-block w-100"
+                                 className="label d-block w-100"
                                  src={d.img} muted autoPlay loop
                                   
                               />
