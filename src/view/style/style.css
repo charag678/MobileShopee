@@ -1,3 +1,6 @@
+:root{
+    --maincolor:#b95216;
+}
 .cur {
     cursor: pointer;
     margin-bottom: 20px;
@@ -85,5 +88,56 @@
     color: rgb(17, 20, 217);
     font-size: larger;
 }
+/* .home{
+    position: relative;
+    text-decoration: none;
+    font-size: larger;
+    color: rgba(14, 223, 73, 0.611);
+    font-weight: 800;
+}
+.home::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    height: 2.5px;
+    width: 100%;
+    left: 0;
+    background-color:rgba(223, 14, 70, 0.782); 
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
 
+}
+.home:hover::after{
+    transform: scaleX(1);
+}
+.home:hover{
+    color: rgba(21, 14, 223, 0.837);
+}*/
+.cart{
+    font-size: larger;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-left: 0.01em solid black;
+    padding: 0.3em;
+    color: chocolate;
+
+}
+.cart:hover{
+    color: #fff;
+    background: var(--maincolor);
+    border-radius: 4px;
+} 
+.home{
+        display: flex;
+        font-weight: 700;
+         color: chocolate; 
+        font-size: larger;
+        position: relative;
+}
+.home:hover{
+    color: #fff;
+    background: var(--maincolor);
+    border-radius: 5px;
+}
 

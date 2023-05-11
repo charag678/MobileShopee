@@ -13,6 +13,7 @@ import Register from "./view/screen/Register"
 import Login from "./view/screen/Login";
 import { useState } from "react";
 import Addtocart from "./view/screen/Addtocart";
+import Payment from "./view/screen/Payment";
 function App() {
   console.log(menubar);
   const [user, setUser] = useState(localStorage.getItem('user'));
@@ -42,17 +43,22 @@ function App() {
                       style={{ maxHeight: '100px' }}
                       navbarScroll
                     >
-                      <Nav.Link><Link to={"/"} className="text-decoration-none text-danger">Home</Link></Nav.Link>
+                      <Nav.Link><Link to={"/"} className="home text-decoration-none ">Home</Link></Nav.Link>
                       {
                         menubar.map(function (d) {
                           return (
-                            <Nav.Link><Link to={`/${d}`} className="text-decoration-none text-danger">{d}</Link></Nav.Link>
+                            <Nav.Link><Link to={`/${d}`} className="home text-decoration-none ">{d}</Link></Nav.Link>
                           )
                         })
                       }
+                      {
+                        user?
+                        <Nav.Link><Link to={"/addtocart"} className="cart text-decoration-none ">🛒Cart</Link></Nav.Link>
+                        :null
+                      }
                       {user ? null : <>
-                        <Nav.Link><Link to={"/register"} className="text-decoration-none text-danger">Register</Link></Nav.Link>
-                        <Nav.Link><Link to={"/login"} className="text-decoration-none text-danger">Login</Link></Nav.Link>
+                        <Nav.Link><Link to={"/register"} className=" home text-decoration-none ">Register</Link></Nav.Link>
+                        <Nav.Link><Link to={"/login"} className=" home text-decoration-none ">Login</Link></Nav.Link>
                       </>
                       }
                       {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
@@ -112,6 +118,7 @@ function App() {
 
 
           <Route path='/addtocart' element={<Addtocart />} />
+          <Route path='/payment' element={<Payment/>} />
 
 
 

@@ -5,6 +5,7 @@ export var product=[
         Image:require('../img/m7.webp'),
         Price:'16,499',
         MRP:'17,900',
+        Rating:"⭐⭐⭐⭐",
         description: 'Cosmic Purple, 6GB RAM, 128GB Storage, Battery -5000mAh',
 
     },
@@ -14,6 +15,7 @@ export var product=[
         Image:require('../img/m6.jpg'),
         Price:'74,799',
         MRP:'76,499',
+        Rating:"⭐⭐⭐⭐",
         description: 'Dark Red 12GB, 256GB Storage, Battery -5000mAh',
     },
     {
@@ -22,6 +24,7 @@ export var product=[
         Image:require('../img/tecno.jpg'),
         Price:'49,999',
         MRP:'51,090',
+        Rating:"⭐⭐⭐⭐",
         description: ' Stardust Grey 12GB RAM,256GB Storage, Battery - 4050mAh',
     },
     {
@@ -30,6 +33,7 @@ export var product=[
         Image:require('../img/samsung2.jpg'),
         Price:'57,999',
         MRP:'58,090',
+        Rating:"⭐⭐⭐⭐",
         description: 'Phantom White, 8GB RAM, 128GB Storage, Battery - 4500mAh',
     },
     {
@@ -38,6 +42,7 @@ export var product=[
         Image:require('../img/apple.webp'),
         Price:'1,49,900',
         MRP:'1,45,900',
+        Rating:"⭐⭐⭐⭐",
         description: ' (256 GB) - Deep Purple, Battery - 4232mAh',
     },
     {
@@ -46,6 +51,7 @@ export var product=[
         Image:require('../img/realme1.jpg'),
         Price:'17,499',
         MRP:'15,090',
+        Rating:"⭐⭐⭐⭐",
         description: 'Hyper Black 6GB RAM+128GB Storage, Battery - 4050mAh',
     },
     {
@@ -54,6 +60,7 @@ export var product=[
         Image:require('../img/IQ.jpg'),
         Price:'59,999',
         MRP:'57,999',
+        Rating:"⭐⭐⭐⭐",
         description: ' Legend 16GB, 256GB Storage, Battery -5000mAh',
     },
     {
@@ -62,10 +69,48 @@ export var product=[
         Image:require('../img/galaxy.jpg'),
         Price:'1,54,998',
         MRP:'1,55,900',
+        Rating:"⭐⭐⭐⭐",
         description: 'Phantom Black, 12GB RAM, 256GB Storage, Battery -5000mAh',
     },
+    {
+        id:9,
+        name:'Redmi Pad ',
+        Image:require('../img/tab.jpg'),
+        Price:'16,999',
+        MRP:'28,999',
+        Rating:"⭐⭐⭐⭐",
+        description: '26.95cm (10.61 inch) 2K Resolution & 90Hz Refresh Rate Display | 4GB RAM & 128GB Storage, Expandable up to 1TB',
+    },
+    {
+        id:10,
+        name:'Apple 2021 iPad ',
+        Image:require('../img/tab2.jpg'),
+        Price:'30,900',
+        MRP:'38,999',
+        Rating:"⭐⭐⭐⭐",
+        description: '(10.2-inch (25.91 cm))iPad with A13 Bionic chip (Wi-Fi, 64GB) - Space Grey (9th Generation)',
+    },
+    {
+        id:11,
+        name:'Lenovo Tab P11',
+        Image:require('../img/tab3.jpg'),
+        Price:'21,980',
+        MRP:'37,000',
+        Rating:"⭐⭐⭐⭐",
+        description: '11 inch (27.94 cm), 4GB, 128GB, Wi-Fi + LTE, Data Only) 2K Display, Qualcomm Snapdragon, Quad Speakers, Dolby Atmos, TUV Certified Eye Protection, Face Unlock Technology Platinum Grey',
+    },
+    {
+        id:12,
+        name:'Xiaomi Pad 5',
+        Image:require('../img/tab4.jpg'),
+        Price:'28,999',
+        MRP:'39,999',
+        Rating:"⭐⭐⭐⭐",
+        description: ' Qualcomm Snapdragon 860| 120Hz Refresh Rate| 6GB, 256GB| 2.5K+ Display (10.95-inch/27.81cm)|1 Billion Colours| Dolby Vision Atmos| Quad Speakers| Wi-Fi| Gray',
+    },
+    
 ]
-export var menubar=["About","Service","Contact","🛒"]
+export var menubar=["About","Service","Contact",]
 
 // export var banner=[
 //         //  require('../video/video1.mp4'),

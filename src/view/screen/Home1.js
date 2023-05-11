@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Carousel, Card, ListGroup, Button } from "react-bootstrap";
-import { banner, product, video ,slider} from "../data/data";
+import {product,slider} from "../data/data";
 import { useNavigate } from "react-router-dom";
 import { about } from "../data/data";
 import { product1 } from "../data/data";
-import video1 from "../img/video1.mp4"
 function Home1() {
    const nav = useNavigate()
    console.log(product);
@@ -53,12 +52,12 @@ function Home1() {
 
                            </Card.Body>
                            <ListGroup className="list-group-flush">
-                              <ListGroup.Item>Price:{d.Price}</ListGroup.Item>
+                              <ListGroup.Item className="price">Price:{d.Price}</ListGroup.Item>
                               <ListGroup.Item>MRP:<del>{d.MRP}</del></ListGroup.Item>
                               {/* <ListGroup.Item>Vestibulum at eros</ListGroup.Item> */}
                            </ListGroup>
                            <Card.Body>
-                              <Card.Link className="text-decoration-none text-primary" href="#" onClick={() => nav('/details', { state: d })}>Details</Card.Link>
+                              <Button className="text-decoration-none mb-1" variant="outline-primary" href="#" onClick={() => nav('/details', { state: d })}>Details</Button>
                            </Card.Body>
                         </Card>
                      </Col>

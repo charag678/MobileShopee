@@ -41,9 +41,10 @@ function Details() {
             <Col lg={6}>
                <div>
                   <p><b><h2>{product.name}</h2></b></p>
-                  <p><h4 className="text-danger">Rs.{product.Price}</h4></p>
-                  <p><h4 className="text-muted"><del>{product.MRP}</del></h4></p>
-                  <p>{product.description}</p>
+                  <p><h4 className="text-danger">₹{product.Price}</h4></p>
+                  <p><h4 className="text-black"><del>₹{product.MRP}</del></h4></p>
+                  <p>{product.Rating}</p>
+                  <p><h4>{product.description}</h4></p>
                   <br />
                   <br />
                   {/* <button className="btn btn-primary mr-2 me-5">Buy Now </button> */}
