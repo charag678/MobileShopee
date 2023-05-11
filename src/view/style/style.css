@@ -140,4 +140,8 @@
     background: var(--maincolor);
     border-radius: 5px;
 }
-
+.disc{
+    font-weight: 700;
+    color: rgb(246, 8, 8);
+    letter-spacing:0ch;
+}

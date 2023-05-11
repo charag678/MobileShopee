@@ -61,7 +61,7 @@
 // export default Addtocart;
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { Container, Row, Col, Button } from "react-bootstrap"
+import { Container, Row, Col, Button, } from "react-bootstrap"
 
 export default function Cart() {
 
@@ -87,51 +87,63 @@ export default function Cart() {
 
     return (
         <Container>
-
-            
-
-                
-                        {
-                            data ? data.map((d, index) => {
-                                if (d !== false) {
-                                    return (
-                                        <Row>
-                                        <Col className="border mt-5 mb-4">
-
-                                            <div className="addtocartshow d-flex">
-                                                <div className="addtocartshow-img">
-                                                    <img src={d.Image} style={{ height: '200px' }} />
-
-                                                </div>
-                                                <div className="addtocartshow-text mt-3">
-                                                    <h5><p>{d.name}</p></h5>
-                                                   <h5> ₹<span className="cart-p"> {d.Price}</span></h5><br/>
-                                                    <h6>{d.description}</h6><br/>
-                                                    <h6><p>Qty:{1}</p></h6>
+           
 
 
-                                                </div>
+           
+            {
+                data ? data.map((d, index) => {
+                    if (d !== false) {
+                        return (
+                            <Row>
+                                <Col className="border mt-5 mb-4">
 
-                                                <div className="addtocartshow-text mt-4">
-                                                    <Button onClick={() => removeitem(index)}  variant="outline-danger">Remove</Button>
+                                    <div className="addtocartshow ">
+                                        <div className="addtocartshow-img">
+                                            <img src={d.Image} style={{ height: '200px' }} />
 
-                                                </div>
-                                            </div>
-                                            </Col>
-                                             </Row>
-                                )}
-                                
-                            }):null
-                        }
+                                        </div>
+                                        <div className="addtocartshow-text mt-3">
+                                            <h5><p>{d.name}</p></h5>
+                                            <h5> ₹<span className="cart-p"> {d.Price}</span></h5><br />
+                                            <h6><p className="disc">{d.Disc}</p></h6>
+                                            <h6>{d.description}</h6><br />
+                                            <h6><p>Qty:{1}</p></h6>
 
-                                       
-                   
-                
 
-                
+                                        </div>
 
-            
+                                        <div className="addtocartshow-text mt-4">
+                                            <Button onClick={() => removeitem(index)} variant="outline-danger">Remove</Button>
 
-        </Container>
+
+
+                                        </div>
+                                    </div>
+
+                                    </Col>
+                            </Row>
+
+
+
+
+                        )
+
+                    }
+
+
+                }) : null
+            }
+        
+
+
+
+
+
+
+
+
+
+        </Container >
     )
 }

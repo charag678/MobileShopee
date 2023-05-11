@@ -6,6 +6,7 @@ export var product=[
         Price:'16,499',
         MRP:'17,900',
         Rating:"⭐⭐⭐⭐",
+        Disc:'13% off',
         description: 'Cosmic Purple, 6GB RAM, 128GB Storage, Battery -5000mAh',
 
     },
@@ -16,6 +17,7 @@ export var product=[
         Price:'74,799',
         MRP:'76,499',
         Rating:"⭐⭐⭐⭐",
+        Disc:'10% off',
         description: 'Dark Red 12GB, 256GB Storage, Battery -5000mAh',
     },
     {
@@ -25,6 +27,7 @@ export var product=[
         Price:'49,999',
         MRP:'51,090',
         Rating:"⭐⭐⭐⭐",
+        Disc:'10% off',
         description: ' Stardust Grey 12GB RAM,256GB Storage, Battery - 4050mAh',
     },
     {
@@ -34,6 +37,7 @@ export var product=[
         Price:'57,999',
         MRP:'58,090',
         Rating:"⭐⭐⭐⭐",
+        Disc:'10% off',
         description: 'Phantom White, 8GB RAM, 128GB Storage, Battery - 4500mAh',
     },
     {
@@ -43,6 +47,7 @@ export var product=[
         Price:'1,49,900',
         MRP:'1,45,900',
         Rating:"⭐⭐⭐⭐",
+        Disc:'17% off',
         description: ' (256 GB) - Deep Purple, Battery - 4232mAh',
     },
     {
@@ -52,6 +57,7 @@ export var product=[
         Price:'17,499',
         MRP:'15,090',
         Rating:"⭐⭐⭐⭐",
+        Disc:'20% off',
         description: 'Hyper Black 6GB RAM+128GB Storage, Battery - 4050mAh',
     },
     {
@@ -61,6 +67,7 @@ export var product=[
         Price:'59,999',
         MRP:'57,999',
         Rating:"⭐⭐⭐⭐",
+        Disc:'13% off',
         description: ' Legend 16GB, 256GB Storage, Battery -5000mAh',
     },
     {
@@ -70,6 +77,7 @@ export var product=[
         Price:'1,54,998',
         MRP:'1,55,900',
         Rating:"⭐⭐⭐⭐",
+        Disc:'15% off',
         description: 'Phantom Black, 12GB RAM, 256GB Storage, Battery -5000mAh',
     },
     {
@@ -79,6 +87,7 @@ export var product=[
         Price:'16,999',
         MRP:'28,999',
         Rating:"⭐⭐⭐⭐",
+        Disc:'44% off',
         description: '26.95cm (10.61 inch) 2K Resolution & 90Hz Refresh Rate Display | 4GB RAM & 128GB Storage, Expandable up to 1TB',
     },
     {
@@ -88,6 +97,7 @@ export var product=[
         Price:'30,900',
         MRP:'38,999',
         Rating:"⭐⭐⭐⭐",
+        Disc:'25% off',
         description: '(10.2-inch (25.91 cm))iPad with A13 Bionic chip (Wi-Fi, 64GB) - Space Grey (9th Generation)',
     },
     {
@@ -97,6 +107,7 @@ export var product=[
         Price:'21,980',
         MRP:'37,000',
         Rating:"⭐⭐⭐⭐",
+        Disc:'43% off',
         description: '11 inch (27.94 cm), 4GB, 128GB, Wi-Fi + LTE, Data Only) 2K Display, Qualcomm Snapdragon, Quad Speakers, Dolby Atmos, TUV Certified Eye Protection, Face Unlock Technology Platinum Grey',
     },
     {
@@ -106,6 +117,7 @@ export var product=[
         Price:'28,999',
         MRP:'39,999',
         Rating:"⭐⭐⭐⭐",
+        Disc:'31% off',
         description: ' Qualcomm Snapdragon 860| 120Hz Refresh Rate| 6GB, 256GB| 2.5K+ Display (10.95-inch/27.81cm)|1 Billion Colours| Dolby Vision Atmos| Quad Speakers| Wi-Fi| Gray',
     },
     
