@@ -100,7 +100,7 @@ app.post('/addtocart',function(req,res){
     let resultdata=""
     
     if(!result){
-        resultdata={success:true,message:"data insert successfully"}
+        resultdata={success:true,message:"Product added to cart"}
     }
     else{
         resultdata={success:false,message:"data not insert successfully"}

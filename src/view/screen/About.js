@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { about } from "../data/data";
 function About() {
    return (
-      <Container>
+      <Container fluid>
          <Row>
             {
                about.map(function(d){

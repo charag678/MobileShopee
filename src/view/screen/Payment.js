@@ -40,8 +40,7 @@ const Payment = () => {
                                 className="form-control"
                                 id="cardNumber"
                                 name="cardNumber"
-                                value={paymentInfo.cardNumber}
-                                onChange={handleInputChange}
+                               
                             />
                         </div>
                         <div className="form-group">
@@ -51,8 +50,7 @@ const Payment = () => {
                                 className="form-control"
                                 id="cardNumber"
                                 name="cardNumber"
-                                value={paymentInfo.cardNumber}
-                                onChange={handleInputChange}
+                               
                             />
                         </div>
                         <div className="form-group">
@@ -62,8 +60,7 @@ const Payment = () => {
                                 className="form-control"
                                 id="expirationDate"
                                 name="expirationDate"
-                                value={paymentInfo.expirationDate}
-                                onChange={handleInputChange}
+                               
                             />
                         </div>
                         <div className="form-group">
@@ -73,8 +70,7 @@ const Payment = () => {
                                 className="form-control"
                                 id="cvv"
                                 name="cvv"
-                                value={paymentInfo.cvv}
-                                onChange={handleInputChange}
+                               
                             />
                         </div>
                         <div className="form-group">
@@ -84,8 +80,7 @@ const Payment = () => {
                                 className="form-control"
                                 id="name"
                                 name="name"
-                                value={paymentInfo.name}
-                                onChange={handleInputChange}
+                               
                             />
                         </div>
                         <br />
