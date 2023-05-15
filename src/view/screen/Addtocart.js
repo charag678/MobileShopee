@@ -1,33 +1,62 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Container, Row, Col, Button } from "react-bootstrap"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 export default function Cart() {
-
+const nav=useNavigate()
     const [data, setData] = useState('')
+    const [pay, setPay] = useState('')
 
     useEffect(() => {
         async function show() {
             let res = await axios.post('showtocart', {})
             console.log(res.data);
             setData(res.data)
+            let pay=0
+            res.data.map(d=>{
+                pay+= parseInt(d.Price)
+            })
+            console.log(pay);
+            setPay(pay)
         }
         show()
     }, [])
 
-    function removeitem(index) {
-        console.log(index);
-        setData(data.map((d, index1) => {
-            return index !== index1 && d
-        }))
-
+    async function show() {
+        let res = await axios.post('showtocart', {})
+        console.log(res.data);
+        setData(res.data)
+        let pay=0
+        res.data.map(d=>{
+            pay+= parseInt(d.Price)
+        })
+        console.log(pay);
+        setPay(pay)
     }
+    //  item remove functions
+  async  function removeitem(index) {
+       
+    let arr=[]
+    data.map((d, index1) => {
+                    if(index !== index1){
+                        arr.push(d)
+                    }        })
+            console.log(arr);        
+    let res = await axios.post('removecartitem', arr).catch(e=>console.log(e))
+                console.log(res?.data);
+           await setData(arr)
+    
+            show()
+    
+        }
+
+
     console.log(data);
     return (
         <Container fluid>
 
             <Row className="justify-content-center">
-                {
+                
                     <Col className="col-lg-6">
                         {
                             data ? data.map((d, index) => {
@@ -62,16 +91,18 @@ export default function Cart() {
                             }) : null
                         }
                     </Col>
-                }
-
-                <center><Link className="buynow" to="/Payment"> <Button>Proceed to Payment</Button></Link></center>
+                
+<Col className="">
+<div className="m-4 position-fixed bg-success w-25">
+<center> <Button onClick={()=>nav('/orderplace',{state:pay})}>Proceed to Payment</Button></center>
+     <p className="border m-4 p-4 text-light">
+        Total pay:{pay}
+     </p>
+     </div>       
+</Col>
             </Row>
 
-            <br /> <br />
-            <br /> <br />
-
-            <br /> <br />
-            <br /> <br />
+           
         </Container>
 
     )

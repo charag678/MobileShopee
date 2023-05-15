@@ -14,6 +14,8 @@ import Login from "./view/screen/Login";
 import { useState } from "react";
 import Addtocart from "./view/screen/Addtocart";
 import Payment from "./view/screen/Payment";
+import  Profile  from "./view/screen/Profile";
+import  OrderPlace  from "./view/screen/OrderPlace";
 function App() {
   console.log(menubar);
   const [user, setUser] = useState(localStorage.getItem('user'));
@@ -104,7 +106,10 @@ function App() {
 
 
           {
-            user ? null : <>
+            user ? <>
+             <Route path='/profile' element={<Profile />} />
+             <Route path='/orderplace' element={<OrderPlace />} />
+            </> : <>
               <Route path='/register' element={<Register />} />
               <Route path='/login' element={<Login />} />
             </>
