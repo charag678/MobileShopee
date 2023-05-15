@@ -122,7 +122,7 @@ export var product=[
     },
     
 ]
-export var menubar=["About","Service","Contact",]
+export var menubar=["About","Service","Contact","Payment"]
 
 // export var banner=[
 //         //  require('../video/video1.mp4'),
@@ -169,7 +169,7 @@ export var product1=[
         id:5,
         name:'Mobile Service',
         image:require('../img/service11.jpg'),
-        description:' A mobile service provider is a company that sells wireless connectivity to customers for cellphone data and telephone calls. ' 
+        description:' A mobile service provider is a company that sells wireless connectivity to customers for cellphone data and telephone calls.' 
                       
     },
     {
@@ -183,7 +183,7 @@ export var product1=[
         id:7,
         name:'Battery Replacement',
         image:require('../img/battery.png'),
-        description:'Replacement Battery means a battery purchased from an Interstate Batteries authorized warranty dealer at an adjusted rate.' 
+        description:'Replacement Battery means a battery purchased from an Interstate Batteries authorized warranty dealer at adjusted rate.' 
                       
     },
     {

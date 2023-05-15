@@ -22,11 +22,11 @@ function Home1() {
                                  src={d.img} muted autoPlay loop
                                   
                               />
-                               <Carousel.Caption>
+                               {/* <Carousel.Caption>
                                  <br/>
                                  <h3>SPECIAL OFFER 🤩 </h3>
                                  <h2>SUPER SALE 50% OFF</h2>
-                              </Carousel.Caption> 
+                              </Carousel.Caption>  */}
 
                            </Carousel.Item>
 

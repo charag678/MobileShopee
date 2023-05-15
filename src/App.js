@@ -134,8 +134,7 @@ function App() {
                 <div className="row text-center text-md-left">
                   <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 className="text-uppercase mb-4 font-weight-bold text-warning">📱MOBILE SHOPEE</h5>
-                    <p>Some quick example text to build on the card title and make up the
-                      bulk of the card's content.</p>
+                    <p>Mobile Shopee-Fast Delivery Service offers quick home delivery of mobile phones listed on our website.</p>
                   </div>
                   <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 className="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>

@@ -28,7 +28,7 @@ function Details() {
       }
    }
    function productbuynow() {
-      alert("buy now")
+      nav("/Payment")
    }
    return (
       <Container>
@@ -48,7 +48,8 @@ function Details() {
                   <br />
                   <br />
                   {/* <button className="btn btn-primary mr-2 me-5">Buy Now </button> */}
-                  <button className="btn btn-success mr-2" id="btn" onClick={() => productaddtocart(product)}>Add to cart </button>
+                  <button className="btn btn-success mr-2" id="btn" onClick={() => productbuynow(product)}>Buy Now </button>
+                  <button className="btn btn-primary mr-2" id="btn" onClick={() => productaddtocart(product)}>Add to cart </button>
                </div>
             </Col>
          </Row>

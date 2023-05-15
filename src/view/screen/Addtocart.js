@@ -1,68 +1,7 @@
-// import { Container, Row, Col } from "react-bootstrap";
-// import '../style/style.css'
-// import { useEffect, useState } from "react";
-// import axios from "axios";
-// function Addtocart() {
-//     const [cartdata, setCart] = useState('')
-//     useEffect(() => {
-
-//         async function show() {
-
-//             let res = await axios.post('showtocart', {})
-//             // console.log(res.data);
-//             setCart(res.data)
-//         }
-//         show()
-//     }, [])
-
-//     console.log(cartdata);
-//     return (
-//         {
-//             cartdata && cartdata.map((d) => {
-//                 return (
-//                     <>
-//                     <Row>
-
-
-//                         <Col lg={3}>
-
-//                             <div class="card">
-//                                 <Col lg={4}>
-//                                     <img src={d.Image} class="card-img-top"  />
-//                                 </Col>
-
-//                                 <div class="card-body">
-//                                     <h5 class="card-title">{d.name}</h5>
-//                                 </div>
-//                                 <ul class="list-group list-group-light list-group-small">
-//                                     <li class="list-group-item px-4">Rs:<span className="cart-p"> {d.Price}</span></li>
-//                                     <li class="list-group-item px-4"><h6>{d.description}</h6></li>
-//                                 </ul>
-
-
-//                             </div>
-
-//                         </Col>
-
-
-//                         </Row>
-//                         </>
-//                         )
-
-//                 })
-//             }
-
-
-
-
-//     );
-// }
-
-// export default Addtocart;
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { Container, Row, Col, Button, } from "react-bootstrap"
-
+import { Container, Row, Col, Button } from "react-bootstrap"
+import { Link } from "react-router-dom"
 export default function Cart() {
 
     const [data, setData] = useState('')
@@ -84,66 +23,56 @@ export default function Cart() {
 
     }
     console.log(data);
-
     return (
-        <Container>
-           
+        <Container fluid>
+
+            <Row className="justify-content-center">
+                {
+                    <Col className="col-lg-6">
+                        {
+                            data ? data.map((d, index) => {
+                                if (d !== false) {
+                                    return (
+                                        <div className="border mt-5 mb-4">
+                                            <div className="addtocartshow ">
+                                                <div className="addtocartshow-img">
+                                                    <img src={d.Image} style={{ height: '200px' }} />
+
+                                                </div>
+                                                <div className="addtocartshow-text mt-3 ">
+                                                    <h5><p>{d.name}</p></h5>
+                                                    <h5> ₹<span className="cart-p"> {d.Price}</span></h5><br />
+                                                    <h6><p className="disc">{d.Disc}</p></h6>
+                                                    <h6>{d.description}</h6><br />
+                                                    <h6><p>Qty:{1}</p></h6>
+                                                    <Button className="remove mb-4" variant="outline-danger" onClick={() => removeitem(index)}>Remove</Button>
 
 
-           
-            {
-                data ? data.map((d, index) => {
-                    if (d !== false) {
-                        return (
-                            <Row>
-                                <Col className="border mt-5 mb-4">
+                                                </div>
 
-                                    <div className="addtocartshow ">
-                                        <div className="addtocartshow-img">
-                                            <img src={d.Image} style={{ height: '200px' }} />
+                                                <div className="addtocartshow-text mt-4">
 
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="addtocartshow-text mt-3">
-                                            <h5><p>{d.name}</p></h5>
-                                            <h5> ₹<span className="cart-p"> {d.Price}</span></h5><br />
-                                            <h6><p className="disc">{d.Disc}</p></h6>
-                                            <h6>{d.description}</h6><br />
-                                            <h6><p>Qty:{1}</p></h6>
 
 
-                                        </div>
+                                    )
+                                }
+                            }) : null
+                        }
+                    </Col>
+                }
 
-                                        <div className="addtocartshow-text mt-4">
-                                            <Button onClick={() => removeitem(index)} variant="outline-danger">Remove</Button>
+                <center><Link className="buynow" to="/Payment"> <Button>Proceed to Payment</Button></Link></center>
+            </Row>
 
+            <br /> <br />
+            <br /> <br />
 
+            <br /> <br />
+            <br /> <br />
+        </Container>
 
-                                        </div>
-                                    </div>
-
-                                    </Col>
-                            </Row>
-
-
-
-
-                        )
-
-                    }
-
-
-                }) : null
-            }
-        
-
-
-
-
-
-
-
-
-
-        </Container >
     )
 }
